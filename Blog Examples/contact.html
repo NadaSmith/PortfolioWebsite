@@ -1,0 +1,108 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=1000, user-scalable=0">
+        <title>A. Smith's Contact Page</title>
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"> <!-- link to stylesheet that removes browser default styling-->
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://kit.fontawesome.com/10e9e3ac9a.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+          
+        <div id="container" class="fixed-width">
+            <!--HEADER SECTION-->
+            <header class="header-page">
+                <div class="fixed-width clearfix">
+                    <em class="site-name">A. Smith</em>
+                    <nav class="moon">
+                        <ul>
+                            <li><a href="index.html">homepage<em>home</em></a></li>
+                            <li><a href="about.html">who I am?<em>about</em></a></li>
+                            <li><a href="projects.html">MY PORTFOLIO<em>projects</em></a></li>
+                            <li><a href="https://medium.com/@ayronada">articles<em>blog</em></a></li>
+                            <li><a href="socials.html">Follow me<em>Socials</em></a></li>
+                            <li><a href="#">get in touch<em>contact</em></a></li>
+                        </ul>
+                        <img id="moon" src="moon.png" alt="">
+                    </nav>
+                </div>
+            </header>
+    
+            <section>
+                <img class="top-image" src="nada6.png" alt="Ayronada's headshot with big, bright smile and curly hair">
+            </section>
+
+            <br>
+            <br>
+
+            
+            <div>
+                <h1 id="contact-title">CONTACT ME!</h1>
+            </div>
+            
+            <div class="contact-page">
+
+                <div class="form">
+                    <form class="form-info"  method="POST">
+
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+        
+                        <label for="email"></label>
+                        <input type="email"  id="email" name="email" placeholder="Email" required>
+                        
+                       
+                        <label for="message"></label>
+                        <textarea name="message" id="message" placeholder="Message..." cols="30" rows="10" required></textarea>   
+                                         
+                        <button id="btn" type="submit">Contact Me!</button>
+                    </form>
+    
+                </div>
+
+                <br>
+
+                <div class="map">
+                    <div style="width:500px;height:500px;">
+                        <div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Arlington,+VA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                        </div>
+                        <a class="google-maps-html" href="https://kbj9qpmy.com/hrn" id="enable-map-data">Hosting Right Now</a><style>#my-map-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+                    </div>
+
+                </div>
+            
+            </div>
+            
+
+            <!--FOOTER SECTION-->
+            <footer class="footer-page-contact">
+                <div class="footer-page-content fixed-width clearfixed">
+                    <small class="copyright">All Content Copyright 2023 - Nada Smith. All Rights Reserved</small>
+                    <small class="credits">Site Designed by <a href="#">Nada Smith</a></small>
+                </div>
+            </footer>
+    
+
+
+
+            <script defer src="app3.js" charset="utf-8"></script>
+
+            <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            
+            <script type="text/javascript">
+                (function(){
+                    emailjs.init("IuR2CDePJXEZa3ZDb");
+                })();
+            </script>
+    
+
+        </div>
+
+    </body>
+</html>
