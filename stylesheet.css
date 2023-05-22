@@ -1,0 +1,837 @@
+body, *, *::before, *::after {     /*understand why we put this at the top*/
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    color:#474747;
+}
+
+body {
+    background-color: var(--primary-color);
+    min-height: 100vh;
+}
+
+
+.fixed-width {
+    width: 940px;
+    margin: 0 auto 0 auto;  /*centers the div when a block level element; centered bc left and right will automatically be caluclated by browswer to be centered*/
+}
+
+h1,h2,h3,h4,h5,h6, .title  {
+    font-family: economica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 1em;
+    color: var(--secondary-color);
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+.icon {
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+a {
+    color: inherit; /*anchor will keep the same color and have no cast*/
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0.5em 0;
+    line-height: 1.5em;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+    
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+/*=========================================
+    Header
+==========================================*/
+.top-image {
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.header-page {
+       padding-bottom: 2em;
+    }
+
+
+    .header-page h1 {
+        position: absolute;
+        overflow: hidden;
+        top: -100%;
+        left: -100%;
+    }
+
+    .header-page > div {
+        position: relative;
+    }
+
+    .site-name {
+        font-family: cursive;
+        font-size: 3rem;
+        position: absolute;   
+        bottom: 0;
+        color: var(--secondary-color);
+    }    
+
+    .header-page nav {
+        float: right;
+        font-family: Economica, sans-serif;
+        text-transform: uppercase;
+    }
+
+    .header-page nav li {
+        color: #bfbfbf;
+        float: left;
+        margin-right: 3rem;
+        padding-top: 3rem;
+    }
+
+    .header-page nav li:last-child {
+        margin-right: 0
+    }
+
+    .header-page nav li em {
+        display: block;         /*making em a block level element it will push it down to the next line*/
+        color: var(--secondary-color);
+        font-size: 1.5em;
+    }
+
+    .lightndark {
+        width: 20px;
+        cursor: pointer;
+    }
+    
+    #moon {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin-top: 2em;
+    }
+
+    .moon {
+        display: flex;
+    }
+
+    :root{
+        --primary-color: white;
+        --secondary-color: black;
+    }
+    .dark-theme {
+        --primary-color: black;
+        --secondary-color: white;
+    }
+    
+/*========================================== 
+    Main Visual 
+==========================================*/
+
+    .main-visual > img {
+        width: 940px;
+        display: block;
+    }    
+
+    .main-visual figcaption {
+        background-color: #f6f6f6;
+        padding: 0.5em 1em;
+    }
+
+    .main-visual figcaption > strong {
+        font-size: 1.4em;
+    }
+
+    figcaption {
+        padding-top: 3em;
+    }
+/*========================================
+    About-Section
+=========================================*/
+
+img {
+    width: 940px;
+}
+
+/*=============================
+    Claims
+=============================*/
+
+
+.claim1 {
+        float: left;
+        width: 30%;
+        margin-right: 5%;
+        margin-bottom: 5%;  
+}
+
+    .claim1:last-child {
+        margin-right: 0%;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color:#9a9a9a;
+        float: left;
+        width: 25%;
+    }
+
+    .claim1 header > h2 {
+        float: left;
+        width: 75%;
+        padding-left: 20%;
+        font-size: 20.px;
+    }
+
+.para-2 {
+    margin-top: 2em;
+}
+
+.claim2 {
+        float: left;
+        width: 30%;
+        margin-right: 5%;
+}
+
+.work-image {
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.work-image:hover {
+    transform: scale(2.5);
+}
+
+.work-image-socials:hover {
+    transform: scale(2);
+    color: goldenrod;
+}
+
+.about-me-image {
+    width: 278px;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.about-me-image:hover {
+    transform: scale(2.5);
+}
+    .claim2:last-child {
+        margin-right: 0%;
+    }
+
+    .fa-star {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color:#9a9a9a;
+        float: left;
+        width: 25%;
+    }
+
+    .claim2 header > h2 {
+        float: left;
+        width: 75%;
+        padding-left: 35px;
+        font-size: 20.px;
+    }
+
+.claim3 {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+}
+
+    .claim3:last-child {
+        margin-right: 0%;
+    }
+
+    .fa-readme {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color:#9a9a9a;
+        float: left;
+        width: 25%;
+    }
+
+    .claim3 header > h2 {
+        float: left;
+        width: 75%;
+        padding-left: 45px;
+        font-size: 20.5px;
+    }
+
+.data-block {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*==============================
+    Portfolio
+==============================*/
+
+    .portfolio {
+        position: relative;      /*this element becomes the anchor*/
+    }
+
+    .portfolio::before {
+        content: " ";
+        display: block;
+        height: 20px;
+        background: url(Images/pattern3.png) left top repeat-x;
+    }
+
+    .title-wrapper {
+        position: absolute;    /* this element becomes anchored to the anchor element*/
+        top: 0;           
+        left: 0;
+        right: 0;              /*setting the element to top, left, right 0 will superimpose header onto div*/
+        text-align: center;
+    }
+
+    .portfolio div > h2 {
+        display: inline;
+        background-color: var(--primary-color);
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+.my-work {
+    font-size: 35px;
+}
+
+.work1 {
+    float: left;
+    width: 22%;
+    margin-right: 4%;
+}
+
+.work1 img {
+    width: 200px;
+    height: 120px;
+  
+}
+
+.work1 figure {
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.work2 {
+    float: left;
+    width: 22%;
+    margin-right:4%;
+}
+
+.work2 img {
+    width: 200px;
+    height: 120px;
+  
+}
+
+.work2 figure {
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.work3 {
+    float: left;
+    width: 22%;
+    margin-right: 4%;
+}
+
+.work3 img {
+    width: 200px;
+    height: 120px;
+  
+}
+
+.work3 figure {
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.work4 {
+    float: left;
+    width: 22%;
+    margin-right: 0;
+}
+
+.work4 img {
+    width: 200px;
+    height: 120px;
+    width: 100%;
+}
+
+.work4 figure {
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.work5 {
+    float: left;
+    width: 22%;
+    margin-right: 4%;
+}
+
+.work5 img {
+    width: 200px;
+    height: 120px;
+  
+}
+
+.work5 figure {
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.work6 {
+    float: left;
+    width: 22%;
+    margin-right: 4%;
+}
+
+.work6 img {
+    width: 200px;
+    height: 120px;
+  
+}
+
+.work6 figure {
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.work7 {
+    float: left;
+    width: 22%;
+    margin-right: 4%;
+}
+
+.work7 img {
+    width: 200px;
+    height: 120px;
+  
+}
+
+.work7 figure {
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.work8 {
+    float: left;
+    width: 22%;
+    margin-right: 0;
+}
+
+.work8 img {
+    width: 200px;
+    height: 120px;
+    width: 100%;
+}
+
+.work8 figure {
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+/*======================================
+    Contact Form
+=======================================*/
+
+#contact-title {
+    font-weight: bolder;
+    font-size: 35px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.contact-page {
+    display: flex;
+    padding: 2%;
+}
+
+.map {
+    padding-left: 1%;
+}
+
+.form {
+    height: 2%;
+    padding: 2%;
+    background-color: mistyrose;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.form:hover {
+    transform: scale(1.5);
+}
+
+.form-info {
+    background-color: mistyrose;
+}
+
+.form-thank-you {
+    display:;
+    margin-top: 2%;
+    height: 2%;
+    padding: 2%;
+    background-color: mistyrose;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+    border: solid;
+}
+
+.form-thank-you h1 {
+    font-size: x-large;
+    font-weight:550;
+}
+
+.form-thank-you p {
+    font-size: medium;
+}
+
+.form-thank-you:hover {
+    transform: scale(1.5);
+}
+
+.form-thank-you p a:hover {
+    color: goldenrod;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 1em;
+    border: solid 2px;
+    border-radius: 4px;
+    background-color:ghostwhite;
+}
+
+input[type=text]:focus {
+    background-color: bisque;
+}
+
+input[type=email] {
+    width: 100%;
+    margin-bottom: 1em;
+    border: solid 2px;
+    border-radius: 4px;
+    background-color:ghostwhite;
+}
+
+input[type=email]:focus {
+    background-color: bisque;
+}
+
+
+textarea {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border: solid 2px;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 1em;
+    background-color:ghostwhite;
+}
+
+textarea:focus {
+    background-color: bisque;
+}
+
+button {
+    border-radius: 10px;
+    border: solid;
+    background-color:white;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    background-color:#bfbfbf;
+}
+
+.form-invalid {
+    outline: 2px solid red !important;
+}
+
+/*=============================
+    Footer
+=============================*/
+
+.footer-page::before {   /*use pseudoclass to create space on page w/o adding markup to index page*/
+    content: " ";
+    display: block;
+    height: 5px;
+}
+
+
+
+.footer-page-index {
+    color: #9b9b9b ;
+    margin-top: 20vh;
+}
+
+    .footer-page-index .copyright {
+        float: left;
+    }
+    
+    .footer-page-index .socials {
+        padding-left: 10%;
+    }
+
+    .footer-page-index .credits {
+        float: right;
+    }
+
+.footer-page-about {
+    color: #9b9b9b ;
+    margin-top: 53vh;
+}
+    .footer-page-about .copyright {
+        float: left;
+    }
+    
+    .footer-page-about .socials {
+        padding-left: 10%;
+    }
+
+    .footer-page-about .credits {
+        float: right;
+    }
+
+.footer-page-projects {
+    color: #9b9b9b ;
+    margin-top: 50vh;
+}
+    .footer-page-projects .copyright {
+        float: left;
+    }
+    
+    .footer-page-projects .socials {
+        padding-left: 10%;
+    }
+
+    .footer-page-projects .credits {
+        float: right;
+    }
+
+.footer-page-socials {
+    color: #9b9b9b ;
+    margin-top: 50vh;
+}
+    .footer-page-socials .copyright {
+        float: left;
+    }
+    
+    .footer-page-socials .socials {
+        padding-left: 10%;
+    }
+
+    .footer-page-socials .credits {
+        float: right;
+    }
+
+.footer-page-contact {
+    color: #9b9b9b ;
+    margin-top: 52vh;
+}
+    .footer-page-contact .copyright {
+        float: left;
+    }
+    
+    .footer-page-contact .socials {
+        padding-left: 10%;
+    }
+
+    .footer-page-contact .credits {
+        float: right;
+    }
+
+    .footer-page-contact-copy {
+        color: #9b9b9b ;
+        margin-top: 73vh;
+    }
+        .footer-page-contact-copy .copyright {
+            float: left;
+        }
+        
+        .footer-page-contact-copy .socials {
+            padding-left: 10%;
+        }
+    
+        .footer-page-contact-copy .credits {
+            float: right;
+        }
+
+@media (max-width:950px ) {
+    .footer-page-index, .footer-page-about, .footer-page-projects, .footer-page-socials, .footer-page-contact {
+        color: #9b9b9b ;
+        font-size: 1rem;
+        height: px;
+        margin-top: auto;
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+
+
+
+#container {
+    background-color: var(--primary-color);
+}
+
+
+
+    /*position: fixed;  /*=================================================*/
+    /*bottom: 0;        /* this makes the footer stay at the bottom of page*/
+    /*width: 100%;      /*=================================================
+    }*/
+
+    .footer-page .copyright {
+        float: left;
+    }
+    
+    .footer-page .socials {
+        padding-left: 10%;
+    }
+
+    .footer-page .credits {
+        float: right;
+    }
+
+.footer-page-content {
+    padding: 2em 0;
+}
+
+
+
+/*====================================================
+    Resume Page - body section
+====================================================*/
+
+.socials-page {
+    width: 100%;
+    height: 585px;
+    display: flex;
+    padding-top: 8em;
+    padding-left: 5em;
+    box-shadow: 5px 7px 25px rgba(1, 0, 0, 1);
+}
+
+.socials-page-title {
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 1em;
+}
+
+
+.my-resume {
+    padding-left: 15.5em;
+    padding-top: 6.5em;
+}
+
+.my-resume button {
+    padding: 0.5em;
+    border-radius: 3em;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.my-resume button:hover {
+    transform: scale(1.5);
+    color: goldenrod;
+}
+
+.social-links {
+    width: 320px;
+    margin-top: 2em;
+    padding-left: 15em;
+}
+
+.social-links p {
+    text-align: center;
+    padding: 0.5em;
+}
+
+
+.me {
+    width: 300px ;
+    height: 300px;
+    margin-top: 2em;
+    margin-left: 7em;
+    border: solid white;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.me:hover {
+    transform: scale(1.5);
+    border-color: goldenrod;
+}
+
+.prof-pic {
+    width: 350px;
+    height: 350px;
+    margin-top: 4em;
+    margin-left: 2em;
+}
+
+.prof-pic:hover {
+    transform: scale(1.2);
+}
+
+.prof-text {
+    padding-top: 20px;
+    padding-left: 2em;
+    margin-top: 1.5em;
+}
+
+.About-page-title {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.figure-about {
+    display: flex;
+    width: 940px;
+    height: 500px;
+}
+
+figcaption strong {
+    color: var(--secondary-color);
+    font-size: xx-large;
+}
+
+.icon i:hover {
+    color: darkgoldenrod;
+    transform: rotate(360deg);   
+}
+
+.icon a:hover {
+    color: darkgoldenrod;   
+}
+
+
+
+
