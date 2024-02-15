@@ -1,3 +1,10 @@
+var typed = new Typed(".title",{
+    strings:["Software Engineer", "Front-End Developer", "Web Developer", "Tech Blogger"],
+    typedSpeed: 70,
+    backSpeed: 55,
+    loop: true
+});
+
 var moon = document.getElementById("moon");
 
 moon.onclick = function() {
@@ -6,7 +13,7 @@ moon.onclick = function() {
     }else {
         moon.src = "moon.png";
     }
-}
+};
 
 document.getElementsByClassName('form-info')[0].addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
