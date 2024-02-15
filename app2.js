@@ -1,3 +1,4 @@
+/*
 var moon = document.getElementById("moon");
 
 moon.onclick = function() {
@@ -7,4 +8,4 @@ moon.onclick = function() {
         moon.src = "moon.png";
     }
 }
-
+*/
